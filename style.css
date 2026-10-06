@@ -1,0 +1,107 @@
+/* ===== Variables : change les couleurs ici, tout le site suit ===== */
+:root {
+  --fond: #f7f9fb;
+  --texte: #1c2733;
+  --texte-doux: #5a6775;
+  --principale: #1f5f8b;   /* couleur du bandeau et des liens */
+  --carte: #ffffff;
+  --bordure: #dde4ea;
+}
+
+/* ===== Base ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  color: var(--texte);
+  background: var(--fond);
+}
+
+/* ===== En-tête ===== */
+header {
+  background: var(--principale);
+  color: #fff;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 0.5rem;
+  font-size: clamp(2rem, 6vw, 3rem);
+}
+
+header p {
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* ===== Contenu principal ===== */
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+section {
+  margin-top: 3rem;
+}
+
+h2 {
+  margin: 0 0 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 3px solid var(--principale);
+  display: inline-block;
+}
+
+h3 {
+  margin: 0 0 0.4rem;
+}
+
+/* ===== Projets ===== */
+article {
+  background: var(--carte);
+  border: 1px solid var(--bordure);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+article p {
+  margin: 0 0 0.75rem;
+  color: var(--texte-doux);
+}
+
+/* ===== Liens ===== */
+a {
+  color: var(--principale);
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:focus-visible {
+  outline: 3px solid var(--principale);
+  outline-offset: 2px;
+}
+
+/* ===== Mode sombre automatique (selon le réglage de l'appareil) ===== */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fond: #121820;
+    --texte: #e8edf2;
+    --texte-doux: #a3afbb;
+    --principale: #5aa7d6;
+    --carte: #1a222c;
+    --bordure: #2c3744;
+  }
+
+  header {
+    color: #0b1118;
+  }
+}
