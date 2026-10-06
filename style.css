@@ -14,6 +14,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
 body {
   margin: 0;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -26,9 +31,7 @@ body {
 header {
   max-width: 760px;
   margin: 0 auto;
-  padding: 4rem 1.5rem 2rem;
-  border-bottom: 1px solid var(--bordure);
-  position: relative;
+  padding: 4rem 1.5rem 1.5rem;
 }
 
 /* petit trait orange au-dessus du nom */
@@ -113,6 +116,46 @@ a:hover {
 a:focus-visible {
   outline: 3px solid var(--accent);
   outline-offset: 2px;
+}
+
+/* ===== Menu de navigation ===== */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--fond);
+  border-bottom: 1px solid var(--bordure);
+}
+
+nav ul {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  list-style: none;
+  display: flex;
+  gap: 1.75rem;
+  overflow-x: auto;       /* défile si trop de liens sur mobile */
+}
+
+nav a {
+  display: block;
+  padding: 0.9rem 0;
+  color: var(--texte);
+  font-weight: 500;
+  font-size: 0.95rem;
+  text-decoration: none;
+  white-space: nowrap;
+  border-bottom: 3px solid transparent;
+}
+
+nav a:hover {
+  background: none;
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+nav a:focus-visible {
+  outline-offset: -3px;
 }
 
 /* ===== Petits écrans ===== */
