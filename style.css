@@ -1,11 +1,12 @@
 /* ===== Variables : change les couleurs ici, tout le site suit ===== */
 :root {
-  --fond: #f7f9fb;
-  --texte: #1c2733;
-  --texte-doux: #5a6775;
-  --principale: #1f5f8b;   /* couleur du bandeau et des liens */
-  --carte: #ffffff;
-  --bordure: #dde4ea;
+  --fond: #ffffff;
+  --fond-doux: #f6f5f3;     /* gris très clair pour les cartes */
+  --texte: #1f2328;
+  --texte-doux: #5c636b;
+  --accent: #c2570c;        /* orange sobre, lisible sur fond blanc */
+  --accent-clair: #fbeee2;  /* orange très pâle */
+  --bordure: #e5e2dd;
 }
 
 /* ===== Base ===== */
@@ -16,34 +17,50 @@
 body {
   margin: 0;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  line-height: 1.6;
+  line-height: 1.7;
   color: var(--texte);
   background: var(--fond);
 }
 
 /* ===== En-tête ===== */
 header {
-  background: var(--principale);
-  color: #fff;
-  padding: 3rem 1.5rem;
-  text-align: center;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 2rem;
+  border-bottom: 1px solid var(--bordure);
+  position: relative;
+}
+
+/* petit trait orange au-dessus du nom */
+header::before {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 4px;
+  background: var(--accent);
+  margin-bottom: 1.5rem;
 }
 
 header h1 {
   margin: 0 0 0.5rem;
-  font-size: clamp(2rem, 6vw, 3rem);
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  font-size: clamp(2rem, 6vw, 2.9rem);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
 }
 
 header p {
   margin: 0;
-  opacity: 0.9;
+  color: var(--texte-doux);
+  font-size: 1.1rem;
 }
 
 /* ===== Contenu principal ===== */
 main {
   max-width: 760px;
   margin: 0 auto;
-  padding: 2rem 1.5rem 4rem;
+  padding: 1rem 1.5rem 5rem;
 }
 
 section {
@@ -51,21 +68,28 @@ section {
 }
 
 h2 {
-  margin: 0 0 1rem;
-  padding-bottom: 0.4rem;
-  border-bottom: 3px solid var(--principale);
-  display: inline-block;
+  margin: 0 0 1.25rem;
+  padding-left: 0.85rem;
+  border-left: 4px solid var(--accent);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.5rem;
+  line-height: 1.2;
 }
 
 h3 {
   margin: 0 0 0.4rem;
+  font-size: 1.1rem;
+}
+
+p {
+  max-width: 65ch;
 }
 
 /* ===== Projets ===== */
 article {
-  background: var(--carte);
+  background: var(--fond-doux);
   border: 1px solid var(--bordure);
-  border-radius: 8px;
+  border-radius: 4px;
   padding: 1.25rem 1.5rem;
   margin-bottom: 1.25rem;
 }
@@ -77,31 +101,27 @@ article p {
 
 /* ===== Liens ===== */
 a {
-  color: var(--principale);
+  color: var(--accent);
   font-weight: 600;
+  text-underline-offset: 3px;
 }
 
 a:hover {
-  text-decoration: none;
+  background: var(--accent-clair);
 }
 
 a:focus-visible {
-  outline: 3px solid var(--principale);
+  outline: 3px solid var(--accent);
   outline-offset: 2px;
 }
 
-/* ===== Mode sombre automatique (selon le réglage de l'appareil) ===== */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --fond: #121820;
-    --texte: #e8edf2;
-    --texte-doux: #a3afbb;
-    --principale: #5aa7d6;
-    --carte: #1a222c;
-    --bordure: #2c3744;
+/* ===== Petits écrans ===== */
+@media (max-width: 480px) {
+  header {
+    padding-top: 2.5rem;
   }
 
-  header {
-    color: #0b1118;
+  article {
+    padding: 1rem;
   }
 }
