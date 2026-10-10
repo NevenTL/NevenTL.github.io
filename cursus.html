@@ -1,91 +1,94 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-title-fr="Cursus ingénieur · Neven Tetelin" data-title-en="Engineering course · Neven Tetelin" data-desc-fr="Projets, productions et compétences construits au fil de la formation." data-desc-en="Projects, productions and skills built throughout the programme.">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cursus ingénieur · Prénom Nom</title>
+  <title>Cursus ingénieur · Neven Tetelin</title>
   <meta name="description" content="Projets, productions et compétences construits au fil de la formation.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script>document.documentElement.classList.add('js')</script>
+  <script>(function(){var d=document.documentElement,l;try{l=localStorage.getItem('lang')}catch(e){}if(l!=='fr'&&l!=='en')l=/^fr/i.test(navigator.language)?'fr':'en';d.lang=l;d.classList.add('js')})()</script>
 </head>
 <body>
   <header class="site-header">
     <div class="wrap bar">
-      <a class="brand" href="index.html">Prénom Nom<span>.</span></a>
-      <button class="toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+      <a class="brand" href="index.html">Neven Tetelin<span>.</span></a>
       <ul class="menu" id="menu">
-      <li><a href="index.html" title="Welcome">Accueil</a></li>
-      <li><a href="cursus.html" aria-current="page" title="Engineering course">Cursus</a></li>
-      <li><a href="mobilite.html" title="International Mobility">Mobilité</a></li>
-      <li><a href="engagement.html" title="Sustainability & Civic Engagement">Engagement</a></li>
-      <li><a href="sport.html" title="Sport & other activities">Sport & activités</a></li>
-      <li><a href="carriere.html" title="Career Development">Carrière</a></li>
+      <li><a href="index.html"><span class="fr">Accueil</span><span class="en">Home</span></a></li>
+      <li><a href="cursus.html" aria-current="page"><span class="fr">Cursus</span><span class="en">Engineering</span></a></li>
+      <li><a href="mobilite.html"><span class="fr">Mobilité</span><span class="en">Mobility</span></a></li>
+      <li><a href="engagement.html"><span class="fr">Engagement</span><span class="en">Engagement</span></a></li>
+      <li><a href="sport.html"><span class="fr">Sport & activités</span><span class="en">Sport & activities</span></a></li>
+      <li><a href="carriere.html"><span class="fr">Carrière</span><span class="en">Career</span></a></li>
       </ul>
+      <div class="tools">
+        <button class="lang" type="button">EN</button>
+        <button class="toggle" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+      </div>
     </div>
   </header>
   <main>
     <section class="hero small">
       <div class="wrap">
         <span class="eyebrow">Engineering course</span>
-        <h1>Cursus ingénieur</h1>
-        <p class="lead">Projets, productions et compétences construits au fil de la formation.</p>
-        <ul class="pills"><li><a href="#projets">Projets</a></li><li><a href="#productions">Productions</a></li><li><a href="#competences">Compétences</a></li></ul>
+        <h1><span class="fr">Cursus ingénieur</span><span class="en">Engineering course</span></h1>
+        <p class="lead"><span class="fr">Projets, productions et compétences construits au fil de la formation.</span><span class="en">Projects, productions and skills built throughout the programme.</span></p>
+        <ul class="pills"><li><a href="#projets"><span class="fr">Projets</span><span class="en">Projects</span></a></li><li><a href="#productions"><span class="fr">Productions</span><span class="en">Productions</span></a></li><li><a href="#competences"><span class="fr">Compétences</span><span class="en">Skills</span></a></li></ul>
       </div>
     </section>
     <section id="projets" class="alt">
       <div class="wrap">
-        <h2 class="reveal">Projets</h2>
+        <h2 class="reveal"><span class="fr">Projets</span><span class="en">Projects</span></h2>
         <div class="grid reveal">
         <article class="card">
-          <h3>Projet 1</h3>
-          <p>Résumé en deux phrases : le problème posé et la solution que tu as apportée.</p>
-          <ul class="tags"><li>Python</li><li>Gestion de projet</li></ul>
-          <details><summary>Lire le récit du projet</summary><dl>
-            <dt>Contexte</dt><dd>Situation de départ, enjeux.</dd>
-            <dt>Mon rôle</dt><dd>Ce que tu as fait précisément.</dd>
-            <dt>Méthodes</dt><dd>Outils et démarche.</dd>
-            <dt>Résultats</dt><dd>Livrables et preuves.</dd>
-            <dt>Enseignements</dt><dd>Ce que tu as appris.</dd></dl></details>
-          <div class="links"><a href="#">Dépôt GitHub</a><a href="#">Démo / PDF</a></div>
+          <h3><span class="fr">Projet 1</span><span class="en">Project 1</span></h3>
+          <p><span class="fr">Résumé en deux phrases : le problème posé et la solution apportée.</span><span class="en">Two-sentence summary: the problem and the solution you brought.</span></p>
+          <ul class="tags"><li>Python</li><li><span class="fr">Gestion de projet</span><span class="en">Project management</span></li></ul>
+          <details><summary><span class="fr">Lire le récit du projet</span><span class="en">Read the project story</span></summary><dl>
+            <dt><span class="fr">Contexte</span><span class="en">Context</span></dt><dd><span class="fr">Situation de départ, enjeux.</span><span class="en">Starting point and stakes.</span></dd>
+            <dt><span class="fr">Mon rôle</span><span class="en">My role</span></dt><dd><span class="fr">Ce que j'ai fait précisément.</span><span class="en">What I did, precisely.</span></dd>
+            <dt><span class="fr">Méthodes</span><span class="en">Methods</span></dt><dd><span class="fr">Outils et démarche.</span><span class="en">Tools and approach.</span></dd>
+            <dt><span class="fr">Résultats</span><span class="en">Results</span></dt><dd><span class="fr">Livrables et preuves.</span><span class="en">Deliverables and evidence.</span></dd>
+            <dt><span class="fr">Enseignements</span><span class="en">Lessons learned</span></dt><dd><span class="fr">Ce que j'ai appris.</span><span class="en">What I learned.</span></dd></dl></details>
+          <div class="links"><a href="#"><span class="fr">Dépôt GitHub</span><span class="en">GitHub repository</span></a><a href="#"><span class="fr">Démo / PDF</span><span class="en">Demo / PDF</span></a></div>
         </article>
         <article class="card">
-          <h3>Projet 2</h3>
-          <p>Résumé en deux phrases : le problème posé et la solution que tu as apportée.</p>
-          <ul class="tags"><li>CAO</li><li>Conception</li></ul>
-          <details><summary>Lire le récit du projet</summary><dl>
-            <dt>Contexte</dt><dd>Situation de départ, enjeux.</dd>
-            <dt>Mon rôle</dt><dd>Ce que tu as fait précisément.</dd>
-            <dt>Méthodes</dt><dd>Outils et démarche.</dd>
-            <dt>Résultats</dt><dd>Livrables et preuves.</dd>
-            <dt>Enseignements</dt><dd>Ce que tu as appris.</dd></dl></details>
-          <div class="links"><a href="#">Dépôt GitHub</a><a href="#">Démo / PDF</a></div>
+          <h3><span class="fr">Projet 2</span><span class="en">Project 2</span></h3>
+          <p><span class="fr">Résumé en deux phrases : le problème posé et la solution apportée.</span><span class="en">Two-sentence summary: the problem and the solution you brought.</span></p>
+          <ul class="tags"><li>CAO</li><li><span class="fr">Conception</span><span class="en">Design</span></li></ul>
+          <details><summary><span class="fr">Lire le récit du projet</span><span class="en">Read the project story</span></summary><dl>
+            <dt><span class="fr">Contexte</span><span class="en">Context</span></dt><dd><span class="fr">Situation de départ, enjeux.</span><span class="en">Starting point and stakes.</span></dd>
+            <dt><span class="fr">Mon rôle</span><span class="en">My role</span></dt><dd><span class="fr">Ce que j'ai fait précisément.</span><span class="en">What I did, precisely.</span></dd>
+            <dt><span class="fr">Méthodes</span><span class="en">Methods</span></dt><dd><span class="fr">Outils et démarche.</span><span class="en">Tools and approach.</span></dd>
+            <dt><span class="fr">Résultats</span><span class="en">Results</span></dt><dd><span class="fr">Livrables et preuves.</span><span class="en">Deliverables and evidence.</span></dd>
+            <dt><span class="fr">Enseignements</span><span class="en">Lessons learned</span></dt><dd><span class="fr">Ce que j'ai appris.</span><span class="en">What I learned.</span></dd></dl></details>
+          <div class="links"><a href="#"><span class="fr">Dépôt GitHub</span><span class="en">GitHub repository</span></a><a href="#"><span class="fr">Démo / PDF</span><span class="en">Demo / PDF</span></a></div>
         </article>
         </div>
       </div>
     </section>
     <section id="productions">
       <div class="wrap">
-        <h2 class="reveal">Productions</h2>
+        <h2 class="reveal"><span class="fr">Productions</span><span class="en">Productions</span></h2>
         <div class="grid reveal">
-        <article class="card empty"><p>À compléter : rapports, posters, codes, maquettes, vidéos, avec un court commentaire.</p></article>
+        <article class="card empty"><p><span class="fr">À compléter : rapports, posters, codes, vidéos, avec un court commentaire.</span><span class="en">To complete: reports, posters, code, videos, each with a short comment.</span></p></article>
         </div>
       </div>
     </section>
     <section id="competences" class="alt">
       <div class="wrap">
-        <h2 class="reveal">Compétences</h2>
+        <h2 class="reveal"><span class="fr">Compétences</span><span class="en">Skills</span></h2>
         <div class="grid reveal">
-        <article class="card empty"><p>À compléter : chaque compétence reliée à un projet qui en est la preuve.</p></article>
+        <article class="card empty"><p><span class="fr">À compléter : chaque compétence reliée à un projet qui en est la preuve.</span><span class="en">To complete: each skill linked to a project that proves it.</span></p></article>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="wrap"><p>© <span data-year></span> Prénom Nom · Eportfolio</p></div>
+    <div class="wrap"><p>© <span data-year></span> Neven Tetelin · Eportfolio</p></div>
   </footer>
   <script src="script.js"></script>
 </body>
