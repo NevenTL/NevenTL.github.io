@@ -99,3 +99,10 @@ footer p{margin:0}
 .js .reveal.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.js .reveal{opacity:1;transform:none}}
 @media(max-width:600px){section{padding:3.5rem 0}.hero{padding:4.5rem 0 4rem}}
+
+/* ===== Langues FR / EN ===== */
+html[lang=fr] .en,html[lang=en] .fr{display:none}
+.tools{display:flex;align-items:center;gap:.5rem}
+.lang{font:inherit;font-weight:700;font-size:.8rem;letter-spacing:.06em;padding:.45rem .85rem;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--ink);cursor:pointer;transition:.2s}
+.lang:hover{border-color:var(--glow);color:var(--accent);background:#fff7ed}
+.lang:focus-visible{outline:3px solid var(--glow);outline-offset:2px}
