@@ -5,42 +5,151 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Prénom Nom · Eportfolio</title>
   <meta name="description" content="Eportfolio de Prénom Nom, étudiant(e) ingénieur(e) : parcours, projets et compétences.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
-  <header>
-    <h1>Prénom Nom</h1>
-    <p>Étudiant(e) ingénieur(e) en … | Spécialité …</p>
-  </header>
-
-  <nav aria-label="Navigation principale">
-    <ul>
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="index.html">Prénom Nom<span>.</span></a>
+      <button class="toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+      <ul class="menu" id="menu">
       <li><a href="index.html" aria-current="page" title="Welcome">Accueil</a></li>
       <li><a href="cursus.html" title="Engineering course">Cursus</a></li>
       <li><a href="mobilite.html" title="International Mobility">Mobilité</a></li>
       <li><a href="engagement.html" title="Sustainability & Civic Engagement">Engagement</a></li>
       <li><a href="sport.html" title="Sport & other activities">Sport & activités</a></li>
       <li><a href="carriere.html" title="Career Development">Carrière</a></li>
-    </ul>
-  </nav>
-
+      </ul>
+    </div>
+  </header>
   <main>
+    <section class="hero">
+      <div class="wrap">
+        <span class="eyebrow">Eportfolio · Étudiant(e) ingénieur(e)</span>
+        <h1>Je conçois des solutions <em>d'ingénieur</em>, avec rigueur et curiosité.</h1>
+        <p class="lead">Une phrase d'accroche sur ta spécialité, ce que tu cherches (stage, alternance…) et ce qui te distingue.</p>
+        <div class="cta"><a class="btn btn-primary" href="#projets">Voir mes projets</a><a class="btn btn-ghost" href="#contact">Me contacter</a></div>
+      </div>
+    </section>
+
     <section id="a-propos">
-      <h2>À propos</h2>
-      <p>Présente-toi en quelques lignes : ton parcours, ce qui te motive, ton projet professionnel.</p>
+      <div class="wrap about">
+        <div class="reveal">
+          <span class="eyebrow">À propos</span>
+          <h2>Un parcours construit par des projets concrets</h2>
+          <p>Présente-toi en quelques lignes : d'où tu viens, ce qui t'a mené à l'ingénierie, ce que tu veux construire. Reste concret, avec des exemples plutôt que des adjectifs.</p>
+        </div>
+        <div class="facts reveal">
+          <div class="fact"><strong>Formation</strong>École, spécialité, année</div>
+          <div class="fact"><strong>Valeurs</strong>Rigueur · Curiosité · Esprit d'équipe</div>
+          <div class="fact"><strong>Recherche</strong>Stage / alternance, domaine visé</div>
+        </div>
+      </div>
     </section>
-    <section id="objectifs">
-      <h2>Objectifs de cet eportfolio</h2>
-      <p>Explique à quoi sert ce site et comment le parcourir (par exemple : suivre ta progression sur les 3 ans de formation).</p>
+
+    <section id="projets" class="alt">
+      <div class="wrap">
+        <span class="eyebrow reveal">Réalisations</span>
+        <h2 class="reveal">Projets à la une</h2>
+        <div class="grid reveal">
+        <article class="card">
+          <h3>Projet 1</h3>
+          <p>Résumé en deux phrases : le problème posé et la solution que tu as apportée.</p>
+          <ul class="tags"><li>Python</li><li>Gestion de projet</li></ul>
+          <details><summary>Lire le récit du projet</summary><dl>
+            <dt>Contexte</dt><dd>Situation de départ, enjeux.</dd>
+            <dt>Mon rôle</dt><dd>Ce que tu as fait précisément.</dd>
+            <dt>Méthodes</dt><dd>Outils et démarche.</dd>
+            <dt>Résultats</dt><dd>Livrables et preuves.</dd>
+            <dt>Enseignements</dt><dd>Ce que tu as appris.</dd></dl></details>
+          <div class="links"><a href="#">Dépôt GitHub</a><a href="#">Démo / PDF</a></div>
+        </article>
+        <article class="card">
+          <h3>Projet 2</h3>
+          <p>Résumé en deux phrases : le problème posé et la solution que tu as apportée.</p>
+          <ul class="tags"><li>CAO</li><li>Conception</li></ul>
+          <details><summary>Lire le récit du projet</summary><dl>
+            <dt>Contexte</dt><dd>Situation de départ, enjeux.</dd>
+            <dt>Mon rôle</dt><dd>Ce que tu as fait précisément.</dd>
+            <dt>Méthodes</dt><dd>Outils et démarche.</dd>
+            <dt>Résultats</dt><dd>Livrables et preuves.</dd>
+            <dt>Enseignements</dt><dd>Ce que tu as appris.</dd></dl></details>
+          <div class="links"><a href="#">Dépôt GitHub</a><a href="#">Démo / PDF</a></div>
+        </article>
+        <article class="card">
+          <h3>Projet 3</h3>
+          <p>Résumé en deux phrases : le problème posé et la solution que tu as apportée.</p>
+          <ul class="tags"><li>Data</li><li>Python</li></ul>
+          <details><summary>Lire le récit du projet</summary><dl>
+            <dt>Contexte</dt><dd>Situation de départ, enjeux.</dd>
+            <dt>Mon rôle</dt><dd>Ce que tu as fait précisément.</dd>
+            <dt>Méthodes</dt><dd>Outils et démarche.</dd>
+            <dt>Résultats</dt><dd>Livrables et preuves.</dd>
+            <dt>Enseignements</dt><dd>Ce que tu as appris.</dd></dl></details>
+          <div class="links"><a href="#">Dépôt GitHub</a><a href="#">Démo / PDF</a></div>
+        </article>
+        </div>
+        <p class="reveal" style="margin-top:2rem"><a href="cursus.html"><strong>Tous les projets du cursus →</strong></a></p>
+      </div>
     </section>
+
+    <section id="rubriques">
+      <div class="wrap">
+        <span class="eyebrow reveal">Eportfolio</span>
+        <h2 class="reveal">Explorer mon parcours</h2>
+        <div class="grid reveal">
+        <a class="card" href="cursus.html" style="text-decoration:none"><h3 style="color:var(--ink)">Cursus</h3><p>Engineering course</p><span class="links">Découvrir →</span></a>
+        <a class="card" href="mobilite.html" style="text-decoration:none"><h3 style="color:var(--ink)">Mobilité</h3><p>International Mobility</p><span class="links">Découvrir →</span></a>
+        <a class="card" href="engagement.html" style="text-decoration:none"><h3 style="color:var(--ink)">Engagement</h3><p>Sustainability & Civic Engagement</p><span class="links">Découvrir →</span></a>
+        <a class="card" href="sport.html" style="text-decoration:none"><h3 style="color:var(--ink)">Sport & activités</h3><p>Sport & other activities</p><span class="links">Découvrir →</span></a>
+        <a class="card" href="carriere.html" style="text-decoration:none"><h3 style="color:var(--ink)">Carrière</h3><p>Career Development</p><span class="links">Découvrir →</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="competences" class="alt">
+      <div class="wrap">
+        <span class="eyebrow reveal">Compétences</span>
+        <h2 class="reveal">Ce que je sais faire</h2>
+        <div class="skills reveal">
+          <div><h3>Techniques</h3><ul class="tags"><li>Python</li><li>CAO</li><li>Électronique</li><li>Data</li></ul></div>
+          <div><h3>Outils</h3><ul class="tags"><li>Git / GitHub</li><li>Excel</li><li>MATLAB</li><li>Office</li></ul></div>
+          <div><h3>Transversales</h3><ul class="tags"><li>Gestion de projet</li><li>Travail en équipe</li><li>Communication</li></ul></div>
+          <div><h3>Langues</h3><ul class="tags"><li>Français</li><li>Anglais B2</li><li>LV2</li></ul></div>
+        </div>
+      </div>
+    </section>
+
     <section id="contact">
-      <h2>Contact</h2>
-      <p>email@exemple.fr · <a href="#">LinkedIn</a> · <a href="#">GitHub</a> · <a href="#">CV (PDF)</a></p>
+      <div class="wrap contact">
+        <div class="reveal">
+          <span class="eyebrow">Contact</span>
+          <h2>Échangeons</h2>
+          <p class="lead">Une opportunité, une question, un projet ? Écris-moi.</p>
+          <ul>
+            <li><a href="mailto:email@exemple.fr">email@exemple.fr</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Télécharger mon CV (PDF)</a></li>
+          </ul>
+        </div>
+        <form class="reveal" action="https://formspree.io/f/VOTRE_ID" method="POST">
+          <label>Nom<input type="text" name="nom" required autocomplete="name"></label>
+          <label>Email<input type="email" name="email" required autocomplete="email"></label>
+          <label>Message<textarea name="message" rows="5" required></textarea></label>
+          <button class="btn btn-primary" type="submit">Envoyer le message</button>
+        </form>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>© Prénom Nom · Eportfolio</p>
+    <div class="wrap"><p>© <span data-year></span> Prénom Nom · Eportfolio</p></div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
