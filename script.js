@@ -8,7 +8,7 @@ function setLang(l) {
   d.lang = l;
   try { localStorage.setItem('lang', l); } catch (e) {}
   if (langBtn) {
-    langBtn.textContent = labels[l][0];
+    langBtn.querySelectorAll('span').forEach(s => s.classList.toggle('on', s.dataset.l === l));
     langBtn.setAttribute('aria-label', labels[l][1]);
   }
   if (toggle) toggle.setAttribute('aria-label', labels[l][2]);
@@ -19,6 +19,7 @@ function setLang(l) {
   if (m && meta) meta.content = m;
 }
 if (langBtn) {
+  langBtn.innerHTML = '<span data-l="fr">FR</span><span data-l="en">EN</span>';
   langBtn.addEventListener('click', () => setLang(d.lang === 'fr' ? 'en' : 'fr'));
   setLang(d.lang === 'en' ? 'en' : 'fr');
 }
