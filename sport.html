@@ -3,41 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sport & autres activités</title>
-  <meta name="description" content="Pratique sportive, culture, loisirs et activités extra-scolaires.">
+  <title>Sport & autres activités · Prénom Nom</title>
+  <meta name="description" content="Ce que le sport et mes activités m'apportent : rigueur, équipe, équilibre.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
-  <header>
-    <h1>Sport & autres activités</h1>
-    <p>Prénom Nom · Eportfolio</p>
-  </header>
-
-  <nav aria-label="Navigation principale">
-    <ul>
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="index.html">Prénom Nom<span>.</span></a>
+      <button class="toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+      <ul class="menu" id="menu">
       <li><a href="index.html" title="Welcome">Accueil</a></li>
       <li><a href="cursus.html" title="Engineering course">Cursus</a></li>
       <li><a href="mobilite.html" title="International Mobility">Mobilité</a></li>
       <li><a href="engagement.html" title="Sustainability & Civic Engagement">Engagement</a></li>
       <li><a href="sport.html" aria-current="page" title="Sport & other activities">Sport & activités</a></li>
       <li><a href="carriere.html" title="Career Development">Carrière</a></li>
-    </ul>
-  </nav>
-
+      </ul>
+    </div>
+  </header>
   <main>
-    <nav class="sous-menu" aria-label="Dans cette page"><ul><li><a href="#sport">Sport</a></li><li><a href="#autres-activites">Autres activités</a></li></ul></nav>
-    <section id="sport">
-      <h2>Sport</h2>
-      <p class="encart">À compléter : discipline, niveau, compétitions, ce que cela t'apporte (rigueur, esprit d'équipe…).</p>
+    <section class="hero small">
+      <div class="wrap">
+        <span class="eyebrow">Sport & other activities</span>
+        <h1>Sport & autres activités</h1>
+        <p class="lead">Ce que le sport et mes activités m'apportent : rigueur, équipe, équilibre.</p>
+        <ul class="pills"><li><a href="#sport">Sport</a></li><li><a href="#autres-activites">Autres activités</a></li></ul>
+      </div>
+    </section>
+    <section id="sport" class="alt">
+      <div class="wrap">
+        <h2 class="reveal">Sport</h2>
+        <div class="grid reveal">
+        <article class="card empty"><p>À compléter : discipline, niveau, compétitions, ce que cela t'apporte.</p></article>
+        </div>
+      </div>
     </section>
     <section id="autres-activites">
-      <h2>Autres activités</h2>
-      <p class="encart">À compléter : musique, associations, voyages, projets personnels…</p>
+      <div class="wrap">
+        <h2 class="reveal">Autres activités</h2>
+        <div class="grid reveal">
+        <article class="card empty"><p>À compléter : musique, associations, voyages, projets personnels.</p></article>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>© Prénom Nom · Eportfolio</p>
+    <div class="wrap"><p>© <span data-year></span> Prénom Nom · Eportfolio</p></div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
