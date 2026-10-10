@@ -1,60 +1,63 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-title-fr="Sport & autres activités · Neven Tetelin" data-title-en="Sport & other activities · Neven Tetelin" data-desc-fr="Ce que le sport et mes activités m'apportent : rigueur, équipe, équilibre." data-desc-en="What sport and my activities bring me: discipline, teamwork, balance.">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sport & autres activités · Prénom Nom</title>
+  <title>Sport & autres activités · Neven Tetelin</title>
   <meta name="description" content="Ce que le sport et mes activités m'apportent : rigueur, équipe, équilibre.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script>document.documentElement.classList.add('js')</script>
+  <script>(function(){var d=document.documentElement,l;try{l=localStorage.getItem('lang')}catch(e){}if(l!=='fr'&&l!=='en')l=/^fr/i.test(navigator.language)?'fr':'en';d.lang=l;d.classList.add('js')})()</script>
 </head>
 <body>
   <header class="site-header">
     <div class="wrap bar">
-      <a class="brand" href="index.html">Prénom Nom<span>.</span></a>
-      <button class="toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+      <a class="brand" href="index.html">Neven Tetelin<span>.</span></a>
       <ul class="menu" id="menu">
-      <li><a href="index.html" title="Welcome">Accueil</a></li>
-      <li><a href="cursus.html" title="Engineering course">Cursus</a></li>
-      <li><a href="mobilite.html" title="International Mobility">Mobilité</a></li>
-      <li><a href="engagement.html" title="Sustainability & Civic Engagement">Engagement</a></li>
-      <li><a href="sport.html" aria-current="page" title="Sport & other activities">Sport & activités</a></li>
-      <li><a href="carriere.html" title="Career Development">Carrière</a></li>
+      <li><a href="index.html"><span class="fr">Accueil</span><span class="en">Home</span></a></li>
+      <li><a href="cursus.html"><span class="fr">Cursus</span><span class="en">Engineering</span></a></li>
+      <li><a href="mobilite.html"><span class="fr">Mobilité</span><span class="en">Mobility</span></a></li>
+      <li><a href="engagement.html"><span class="fr">Engagement</span><span class="en">Engagement</span></a></li>
+      <li><a href="sport.html" aria-current="page"><span class="fr">Sport & activités</span><span class="en">Sport & activities</span></a></li>
+      <li><a href="carriere.html"><span class="fr">Carrière</span><span class="en">Career</span></a></li>
       </ul>
+      <div class="tools">
+        <button class="lang" type="button">EN</button>
+        <button class="toggle" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+      </div>
     </div>
   </header>
   <main>
     <section class="hero small">
       <div class="wrap">
         <span class="eyebrow">Sport & other activities</span>
-        <h1>Sport & autres activités</h1>
-        <p class="lead">Ce que le sport et mes activités m'apportent : rigueur, équipe, équilibre.</p>
-        <ul class="pills"><li><a href="#sport">Sport</a></li><li><a href="#autres-activites">Autres activités</a></li></ul>
+        <h1><span class="fr">Sport & autres activités</span><span class="en">Sport & other activities</span></h1>
+        <p class="lead"><span class="fr">Ce que le sport et mes activités m'apportent : rigueur, équipe, équilibre.</span><span class="en">What sport and my activities bring me: discipline, teamwork, balance.</span></p>
+        <ul class="pills"><li><a href="#sport"><span class="fr">Sport</span><span class="en">Sport</span></a></li><li><a href="#autres-activites"><span class="fr">Autres activités</span><span class="en">Other activities</span></a></li></ul>
       </div>
     </section>
     <section id="sport" class="alt">
       <div class="wrap">
-        <h2 class="reveal">Sport</h2>
+        <h2 class="reveal"><span class="fr">Sport</span><span class="en">Sport</span></h2>
         <div class="grid reveal">
-        <article class="card empty"><p>À compléter : discipline, niveau, compétitions, ce que cela t'apporte.</p></article>
+        <article class="card empty"><p><span class="fr">À compléter : discipline, niveau, compétitions, apports.</span><span class="en">To complete: discipline, level, competitions, what it brings you.</span></p></article>
         </div>
       </div>
     </section>
     <section id="autres-activites">
       <div class="wrap">
-        <h2 class="reveal">Autres activités</h2>
+        <h2 class="reveal"><span class="fr">Autres activités</span><span class="en">Other activities</span></h2>
         <div class="grid reveal">
-        <article class="card empty"><p>À compléter : musique, associations, voyages, projets personnels.</p></article>
+        <article class="card empty"><p><span class="fr">À compléter : musique, associations, voyages, projets personnels.</span><span class="en">To complete: music, clubs, travel, personal projects.</span></p></article>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="wrap"><p>© <span data-year></span> Prénom Nom · Eportfolio</p></div>
+    <div class="wrap"><p>© <span data-year></span> Neven Tetelin · Eportfolio</p></div>
   </footer>
   <script src="script.js"></script>
 </body>
