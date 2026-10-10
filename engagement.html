@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="main.css">
   <script>(function(){var d=document.documentElement,l;try{l=localStorage.getItem('lang')}catch(e){}if(l!=='fr'&&l!=='en')l=/^fr/i.test(navigator.language)?'fr':'en';d.lang=l;d.classList.add('js')})()</script>
 </head>
 <body>
@@ -24,7 +24,7 @@
       <li><a href="carriere.html"><span class="fr">Carrière</span><span class="en">Career</span></a></li>
       </ul>
       <div class="tools">
-        <button class="lang" type="button">EN</button>
+        <button class="lang" type="button" aria-label="Switch to English"><span data-l="fr">FR</span><span data-l="en">EN</span></button>
         <button class="toggle" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
       </div>
     </div>
@@ -81,6 +81,6 @@
   <footer>
     <div class="wrap"><p>© <span data-year></span> Neven Tetelin · Eportfolio</p></div>
   </footer>
-  <script src="script.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
