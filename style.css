@@ -103,6 +103,8 @@ footer p{margin:0}
 /* ===== Langues FR / EN ===== */
 html[lang=fr] .en,html[lang=en] .fr{display:none}
 .tools{display:flex;align-items:center;gap:.5rem}
-.lang{font:inherit;font-weight:700;font-size:.8rem;letter-spacing:.06em;padding:.45rem .85rem;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--ink);cursor:pointer;transition:.2s}
-.lang:hover{border-color:var(--glow);color:var(--accent);background:#fff7ed}
+.lang{display:inline-flex;align-items:center;padding:.2rem;border:1px solid var(--line);border-radius:999px;background:#fff;font:inherit;cursor:pointer;transition:border-color .2s}
+.lang:hover{border-color:var(--glow)}
 .lang:focus-visible{outline:3px solid var(--glow);outline-offset:2px}
+.lang span{padding:.3rem .7rem;border-radius:999px;font-size:.8rem;font-weight:700;letter-spacing:.04em;color:var(--muted);transition:background .25s,color .25s}
+.lang span.on{background:var(--grad);color:var(--ink)}
