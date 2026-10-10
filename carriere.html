@@ -3,55 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Développement de carrière</title>
+  <title>Développement de carrière · Prénom Nom</title>
   <meta name="description" content="Stages, projet professionnel et préparation à l'insertion.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
-  <header>
-    <h1>Développement de carrière</h1>
-    <p>Prénom Nom · Eportfolio</p>
-  </header>
-
-  <nav aria-label="Navigation principale">
-    <ul>
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="index.html">Prénom Nom<span>.</span></a>
+      <button class="toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+      <ul class="menu" id="menu">
       <li><a href="index.html" title="Welcome">Accueil</a></li>
       <li><a href="cursus.html" title="Engineering course">Cursus</a></li>
       <li><a href="mobilite.html" title="International Mobility">Mobilité</a></li>
       <li><a href="engagement.html" title="Sustainability & Civic Engagement">Engagement</a></li>
       <li><a href="sport.html" title="Sport & other activities">Sport & activités</a></li>
       <li><a href="carriere.html" aria-current="page" title="Career Development">Carrière</a></li>
-    </ul>
-  </nav>
-
+      </ul>
+    </div>
+  </header>
   <main>
-    <nav class="sous-menu" aria-label="Dans cette page"><ul><li><a href="#stages">Stages</a></li><li><a href="#pep">PEP</a></li><li><a href="#projet-pro">Projet professionnel</a></li></ul></nav>
-    <section id="stages">
-      <h2>Stages</h2>
-      <article class="projet">
-        <h3>Stage 1 : entreprise, durée</h3>
-        <dl>
-          <dt>Contexte</dt><dd>Quel problème ou quelle situation de départ ?</dd>
-          <dt>Mon rôle</dt><dd>Ce que tu as fait précisément (seul ou en équipe).</dd>
-          <dt>Méthodes</dt><dd>Outils, démarche, compétences mobilisées.</dd>
-          <dt>Résultats</dt><dd>Ce qui a été produit, avec une preuve : image, lien, PDF.</dd>
-          <dt>Enseignements</dt><dd>Ce que tu as appris, ce que tu referais autrement.</dd>
-        </dl>
-        <p><a href="#">Voir le livrable (PDF, dépôt, vidéo…)</a></p>
-      </article>
+    <section class="hero small">
+      <div class="wrap">
+        <span class="eyebrow">Career Development</span>
+        <h1>Développement de carrière</h1>
+        <p class="lead">Stages, projet professionnel et préparation à l'insertion.</p>
+        <ul class="pills"><li><a href="#stages">Stages</a></li><li><a href="#pep">PEP</a></li><li><a href="#projet-pro">Projet professionnel</a></li></ul>
+      </div>
+    </section>
+    <section id="stages" class="alt">
+      <div class="wrap">
+        <h2 class="reveal">Stages</h2>
+        <div class="grid reveal">
+        <article class="card">
+          <h3>Stage 1 : entreprise, durée</h3>
+          <p>Résumé en deux phrases : le problème posé et la solution que tu as apportée.</p>
+          <ul class="tags"><li>Industrie</li><li>Terrain</li></ul>
+          <details><summary>Lire le récit du projet</summary><dl>
+            <dt>Contexte</dt><dd>Situation de départ, enjeux.</dd>
+            <dt>Mon rôle</dt><dd>Ce que tu as fait précisément.</dd>
+            <dt>Méthodes</dt><dd>Outils et démarche.</dd>
+            <dt>Résultats</dt><dd>Livrables et preuves.</dd>
+            <dt>Enseignements</dt><dd>Ce que tu as appris.</dd></dl></details>
+          <div class="links"><a href="#">Dépôt GitHub</a><a href="#">Démo / PDF</a></div>
+        </article>
+        </div>
+      </div>
     </section>
     <section id="pep">
-      <h2>PEP</h2>
-      <p class="encart">À compléter : ton projet d'étude professionnel et son évolution.</p>
+      <div class="wrap">
+        <h2 class="reveal">PEP</h2>
+        <div class="grid reveal">
+        <article class="card empty"><p>À compléter : ton projet d'étude professionnel et son évolution.</p></article>
+        </div>
+      </div>
     </section>
-    <section id="projet-pro">
-      <h2>Projet professionnel</h2>
-      <p class="encart">À compléter : métiers visés, secteurs, prochaines étapes. Ajoute ton CV en PDF.</p>
+    <section id="projet-pro" class="alt">
+      <div class="wrap">
+        <h2 class="reveal">Projet professionnel</h2>
+        <div class="grid reveal">
+        <article class="card empty"><p>À compléter : métiers visés, secteurs, prochaines étapes, CV en PDF.</p></article>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>© Prénom Nom · Eportfolio</p>
+    <div class="wrap"><p>© <span data-year></span> Prénom Nom · Eportfolio</p></div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
