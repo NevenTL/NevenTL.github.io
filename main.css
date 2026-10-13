@@ -108,3 +108,7 @@ html[lang=fr] .en,html[lang=en] .fr{display:none}
 .lang:focus-visible{outline:3px solid var(--glow);outline-offset:2px}
 .lang span{padding:.3rem .7rem;border-radius:999px;font-size:.8rem;font-weight:700;letter-spacing:.04em;color:var(--muted);transition:background .25s,color .25s}
 .lang span.on{background:var(--grad);color:var(--ink)}
+
+/* ===== Boutons de rubrique sur fond sombre (hero) ===== */
+.hero .pills a{color:#e8ebef;border-color:rgba(255,255,255,.35);background:transparent}
+.hero .pills a:hover,.hero .pills a:focus-visible{color:var(--ink);background:var(--grad);border-color:transparent}
