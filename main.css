@@ -31,7 +31,7 @@ section{padding:5rem 0}
 .toggle[aria-expanded=true] span:nth-child(1){transform:translateY(6px) rotate(45deg)}
 .toggle[aria-expanded=true] span:nth-child(2){opacity:0}
 .toggle[aria-expanded=true] span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
-@media(max-width:900px){
+@media(max-width:1100px){
 .toggle{display:block}
 .menu{display:none;position:absolute;top:68px;left:0;right:0;flex-direction:column;background:#fff;padding:.75rem 1.5rem 1rem;border-bottom:1px solid var(--line)}
 .menu.open{display:flex}}
@@ -112,3 +112,6 @@ html[lang=fr] .en,html[lang=en] .fr{display:none}
 /* ===== Boutons de rubrique sur fond sombre (hero) ===== */
 .hero .pills a{color:#e8ebef;border-color:rgba(255,255,255,.35);background:transparent}
 .hero .pills a:hover,.hero .pills a:focus-visible{color:var(--ink);background:var(--grad);border-color:transparent}
+
+/* ===== Chiffres clés (durées de pratique) ===== */
+.card p.stat{font-size:1.7rem;font-weight:800;letter-spacing:-.02em;line-height:1.1;color:var(--accent)}
