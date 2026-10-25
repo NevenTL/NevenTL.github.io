@@ -40,21 +40,50 @@
     </section>
 
     <section id="a-propos">
-      <div class="wrap about">
+      <div class="wrap profile">
+        <figure class="photo reveal">
+          <!-- PHOTO : remplace le bloc <div class="placeholder">...</div> par :
+               <img src="images/photo-neven.jpg" alt="Portrait de Neven Tetelin"> -->
+          <div class="placeholder">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8z"/></svg>
+            <span><span class="fr">Photo à venir</span><span class="en">Photo coming soon</span></span>
+          </div>
+        </figure>
         <div class="reveal">
           <span class="eyebrow"><span class="fr">À propos</span><span class="en">About</span></span>
-          <h2><span class="fr">Un parcours construit par des projets concrets</span><span class="en">A path built through concrete projects</span></h2>
-          <p><span class="fr">Présente-toi en quelques lignes : d'où tu viens, ce qui t'a mené à l'ingénierie, ce que tu veux construire.</span><span class="en">Introduce yourself in a few lines: where you come from, what led you to engineering, what you want to build.</span></p>
-        </div>
-        <div class="facts reveal">
-          <div class="fact"><strong><span class="fr">Formation</span><span class="en">Education</span></strong><span class="fr">ENSEEIHT · Département MF2E · 1re année</span><span class="en">ENSEEIHT · MF2E department · 1st year</span></div>
-          <div class="fact"><strong><span class="fr">Valeurs</span><span class="en">Values</span></strong><span class="fr">Rigueur · Curiosité · Esprit d'équipe</span><span class="en">Rigour · Curiosity · Teamwork</span></div>
-          <div class="fact"><strong><span class="fr">Recherche</span><span class="en">Looking for</span></strong><span class="fr">Stage / alternance, à préciser</span><span class="en">Internship / work-study, to specify</span></div>
+          <h2>Neven Tetelin</h2>
+          <p><span class="fr">Étudiant en 1re année à l'ENSEEIHT, dans le département Mécanique des Fluides, Énergétique et Environnement (MF2E), après deux ans à la Prépa t² de Toulouse. J'ai découvert le monde industriel lors d'un stage de six semaines chez Latécoère, où j'ai participé à la démarche Lean sur la chaîne du Rafale. Autonome, polyvalent et adaptable, j'aime comprendre un système tout en travaillant avec les gens.</span><span class="en">First-year student at ENSEEIHT, in the Fluid Mechanics, Energy and Environment department (MF2E), after two years at Prépa t² Toulouse. I discovered industry during a six-week internship at Latécoère, where I took part in the Lean approach on the Rafale line. Independent, versatile and adaptable, I like understanding a system while working with people.</span></p>
+          <div class="facts">
+            <div class="fact"><strong><span class="fr">Formation</span><span class="en">Education</span></strong><span class="fr">ENSEEIHT · Département MF2E · 2026-2029</span><span class="en">ENSEEIHT · MF2E department · 2026-2029</span></div>
+            <div class="fact"><strong><span class="fr">Langues</span><span class="en">Languages</span></strong><span class="fr">Français · Anglais B2 · Espagnol B1</span><span class="en">French · English B2 · Spanish B1</span></div>
+            <div class="fact"><strong><span class="fr">Centres d'intérêt</span><span class="en">Interests</span></strong><span class="fr">Football · Basket · Natation · Surf · Guitare</span><span class="en">Football · Basketball · Swimming · Surfing · Guitar</span></div>
+          </div>
+          <div class="cta actions">
+            <a class="btn btn-primary" href="Documents%20Eportfolio/CV_Neven_Tetelin_FR.pdf" download><span class="fr">↓ CV en français</span><span class="en">↓ CV in French</span></a>
+            <a class="btn btn-primary" href="Documents%20Eportfolio/CV_Neven_Tetelin_EN.pdf" download><span class="fr">↓ CV en anglais</span><span class="en">↓ CV in English</span></a>
+            <a class="btn btn-dark" href="https://www.linkedin.com/in/VOTRE-PROFIL" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="projets" class="alt">
+    <section id="video" class="alt">
+      <div class="wrap">
+        <span class="eyebrow reveal"><span class="fr">Vidéo</span><span class="en">Video</span></span>
+        <h2 class="reveal"><span class="fr">Ma présentation en vidéo</span><span class="en">My video pitch</span></h2>
+        <p class="reveal" style="color:var(--muted)"><span class="fr">Qui je suis, d'où je viens et ce que je vise (2 à 3 minutes, en anglais).</span><span class="en">Who I am, where I come from and where I am heading (2-3 minutes, in English).</span></p>
+        <div class="video reveal">
+          <!-- VIDEO : remplace le bloc <div class="placeholder">...</div> par :
+               <iframe src="https://www.youtube.com/embed/ID_DE_TA_VIDEO" title="Video pitch" allowfullscreen></iframe> -->
+          <div class="placeholder">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+            <span><span class="fr">Vidéo à venir</span><span class="en">Video coming soon</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projets">
       <div class="wrap">
         <span class="eyebrow reveal"><span class="fr">Réalisations</span><span class="en">Work</span></span>
         <h2 class="reveal"><span class="fr">Projets à la une</span><span class="en">Featured projects</span></h2>
@@ -100,7 +129,7 @@
       </div>
     </section>
 
-    <section id="rubriques">
+    <section id="rubriques" class="alt">
       <div class="wrap">
         <span class="eyebrow reveal">Eportfolio</span>
         <h2 class="reveal"><span class="fr">Explorer mon parcours</span><span class="en">Explore my journey</span></h2>
@@ -114,38 +143,29 @@
       </div>
     </section>
 
-    <section id="competences" class="alt">
+    <section id="competences">
       <div class="wrap">
         <span class="eyebrow reveal"><span class="fr">Compétences</span><span class="en">Skills</span></span>
         <h2 class="reveal"><span class="fr">Ce que je sais faire</span><span class="en">What I can do</span></h2>
         <div class="skills reveal">
-          <div><h3><span class="fr">Techniques</span><span class="en">Technical</span></h3><ul class="tags"><li><span class="fr">Mécanique des fluides</span><span class="en">Fluid mechanics</span></li><li><span class="fr">Thermodynamique</span><span class="en">Thermodynamics</span></li><li>Python</li><li>MATLAB</li></ul></div>
-          <div><h3><span class="fr">Outils</span><span class="en">Tools</span></h3><ul class="tags"><li>Git / GitHub</li><li>Excel</li><li>Office</li></ul></div>
-          <div><h3><span class="fr">Transversales</span><span class="en">Soft skills</span></h3><ul class="tags"><li><span class="fr">Gestion de projet</span><span class="en">Project management</span></li><li><span class="fr">Travail en équipe</span><span class="en">Teamwork</span></li><li><span class="fr">Communication</span><span class="en">Communication</span></li></ul></div>
-          <div><h3><span class="fr">Langues</span><span class="en">Languages</span></h3><ul class="tags"><li><span class="fr">Français</span><span class="en">French</span></li><li><span class="fr">Anglais</span><span class="en">English</span></li><li>LV2</li></ul></div>
+          <div><h3><span class="fr">Techniques</span><span class="en">Technical</span></h3><ul class="tags"><li>Python</li><li>Lean / 5S</li><li><span class="fr">Management visuel</span><span class="en">Visual management</span></li></ul></div>
+          <div><h3><span class="fr">Outils</span><span class="en">Tools</span></h3><ul class="tags"><li>Microsoft Office</li><li>Google Workspace</li><li>Git / GitHub</li></ul></div>
+          <div><h3><span class="fr">Qualités</span><span class="en">Strengths</span></h3><ul class="tags"><li><span class="fr">Polyvalence</span><span class="en">Versatility</span></li><li><span class="fr">Autonomie</span><span class="en">Independence</span></li><li><span class="fr">Adaptabilité</span><span class="en">Adaptability</span></li><li><span class="fr">Résilience</span><span class="en">Resilience</span></li><li><span class="fr">Diplomatie</span><span class="en">Diplomacy</span></li></ul></div>
+          <div><h3><span class="fr">Langues</span><span class="en">Languages</span></h3><ul class="tags"><li><span class="fr">Français (natif)</span><span class="en">French (native)</span></li><li><span class="fr">Anglais B2</span><span class="en">English B2</span></li><li><span class="fr">Espagnol B1</span><span class="en">Spanish B1</span></li></ul></div>
         </div>
       </div>
     </section>
 
-    <section id="contact">
-      <div class="wrap contact">
-        <div class="reveal">
-          <span class="eyebrow">Contact</span>
-          <h2><span class="fr">Échangeons</span><span class="en">Let's talk</span></h2>
-          <p class="lead"><span class="fr">Une opportunité, une question, un projet ? Écris-moi.</span><span class="en">An opportunity, a question, a project? Write to me.</span></p>
-          <ul>
-            <li><a href="mailto:email@exemple.fr">email@exemple.fr</a></li>
-            <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">GitHub</a></li>
-            <li><a href="#"><span class="fr">Télécharger mon CV (PDF)</span><span class="en">Download my CV (PDF)</span></a></li>
-          </ul>
+    <section id="contact" class="alt">
+      <div class="wrap reveal">
+        <span class="eyebrow">Contact</span>
+        <h2><span class="fr">Échangeons</span><span class="en">Let's talk</span></h2>
+        <p class="lead"><span class="fr">Une opportunité, une question, un projet ? Écris-moi.</span><span class="en">An opportunity, a question, a project? Write to me.</span></p>
+        <div class="cta actions" style="margin-top:1.5rem">
+          <a class="btn btn-primary" href="mailto:neven.tetelin@etu.toulouse-inp.fr">neven.tetelin@etu.toulouse-inp.fr</a>
+          <a class="btn btn-dark" href="https://www.linkedin.com/in/VOTRE-PROFIL" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="btn btn-dark" href="https://github.com/NevenTL" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
-        <form class="reveal" action="https://formspree.io/f/VOTRE_ID" method="POST">
-          <label><span class="fr">Nom</span><span class="en">Name</span><input type="text" name="nom" required autocomplete="name"></label>
-          <label>Email<input type="email" name="email" required autocomplete="email"></label>
-          <label>Message<textarea name="message" rows="5" required></textarea></label>
-          <button class="btn btn-primary" type="submit"><span class="fr">Envoyer le message</span><span class="en">Send message</span></button>
-        </form>
       </div>
     </section>
   </main>
